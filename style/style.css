@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #cfe0c3;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+#naslov{ 
+    background-color: #1f363e; /* naslov */
+}
+
+header {
+    color: #fff;
+    background-color: #1f363e; /* Pozadina navbara */
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    background-color: #1f363e;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: #cfe0c3; /* Svetlija boja pozadine na hover */
+    color: #1f363e; /* Tamnija boja teksta na hover */
+}
+
+
+header nav {
+    display: inline-block; /* Centrirano u okviru header-a */
+    background-color: #1f363e;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    background-color: #1f363e;
+}
+
+#opis {
+    background-color: rgba(31, 54, 62, 0.8); /* Tamnija pozadina za bolju čitljivost */
+    color: whitesmoke;
+    text-align: left;
+    padding: 2rem; /* Dodavanje paddinga za više prostora unutar paragrafa */
+    border-radius: 8px; /* Zaobljene ivice */
+    margin-bottom: 2rem; /* Razmak ispod paragrafa */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Lagano senčenje */
+    font-size: 1.1rem; /* Uvećanje fonta za bolju čitljivost */
+}
+
+/* Stil za mobilne uređaje */
+@media (max-width: 768px) {
+    #opis {
+        font-size: 1rem; /* Manji font za manje ekrane */
+        padding: 1.5rem; /* Manji padding za mobilne uređaje */
+    }
+}
+
+section {
+    padding: 2rem 5%;
+}
+
+#usluge, #mainslike {
+    text-align: left;
+}
+
+#usluge h2, #mainslike h2 {
+    margin-bottom: 1rem;
+}
+
+/* Stil za slike u #mainslike sekciji */
+#mainslike {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-start;
+}
+
+#mainslike img {
+    width: calc(50% - 0.5rem); /* Svaka slika zauzima 50% širine, sa razmakom */
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+#opish{
+   color: #40798c;
+   text-align: left;
+}
+
+/* Stil za mobilne uređaje */
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #mainslike img {
+        width: 100%; /* Na manjim ekranima slike idu jedna ispod druge */
+        margin-bottom: 1rem;
+    }
+}
